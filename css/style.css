@@ -1,0 +1,89 @@
+:root {
+  --bg-color: #E6E6DE;
+  --main-green: #20E864;
+/*  --main-blue: #2251F8;*/
+--main-blue:#0600FE;
+  --main-red: #EE4813;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+#containers {
+    margin-top: 12%;
+    width: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+}
+.container-left{
+    width: 50%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+
+.container-right {
+    width: 50%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+
+.title-left{
+    width: 50%;
+    float: left;
+/*    margin-bottom: 10%;*/
+}
+
+
+.title-right {
+    width: 50%;
+    float: left;
+/*    margin-bottom: 10%;*/
+}
+
+
+select {
+            font-size: 1em;
+            padding-left: 15px;
+/*            padding: 10px;*/
+            width: 8rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+
+    }
+
+
+h1, h2{
+    text-align: center;
+    font-family: Garamond, serif;
+}
+
+h2 {
+/*    font-family: Helvetica;*/
+}
+
+#slider {
+    margin-left: 40%;
+    width: 40%;
+}
+
+    #slider button {
+    width: 30%;
+    margin-left: 10%;
+      background-color: green; /* Blue background */
+      color: white; /* White text */
+      padding: .5rem .5rem; /* Padding around the text */
+      border-radius: 25px; /* Rounded corners */
+      border: none; /* No border */
+      font-size: 16px; /* Text size */
+      font-weight: bold; /* Bold text */
+      text-align: center; /* Center the text */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: all 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    /* Hover Effect */
+     #slider button:hover {
+      background-color: black; 
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+

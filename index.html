@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPGFCSL1JE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VPGFCSL1JE');
+    </script>
+    
+    <title>Awzan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contentStyle.css">
+
+
+    <script src="main.js"></script>
+
+
+
+
+
+    <script src="offline/p5_v1-4-0.js"></script>
+</head>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_glass/favicon.ico">
+
+
+
+<body>
+  
+<div id="containers">
+
+<h1>root: <select id="wordList">
+        <option value="read">ك-ت-ب</option>
+        <option value="cairo">ق-ه-ر</option>
+    </select> </h1>
+
+<div class="title-left">
+    <h1 style="text-decoration: underline;"> scale </h1>
+</div>
+
+
+
+<div class="title-right read">
+   <h1 style="text-decoration: underline;"> ك-ت-ب</h1>
+</div>
+
+<div class="title-right cairo" style="display: none">
+   <h1 style="text-decoration: underline;"> ق-ه-ر</h1>
+</div>
+
+
+
+<!-- Panel 1 -->
+
+<div id="panel1" style="display: block">
+
+<div class="container-left">
+<h1>فعل </h1>
+<h1> <i>fa'l </i></h1>
+<br>
+<h1 style="color: green"> to do </h1>
+
+</div>
+
+
+<div class="container-right read">
+
+<h1> كتب </h1>
+<h1> <i> ktb </i></h1>
+
+<br>
+
+<h1 style="color: green"> to write (past)</h1>
+
+</div>
+
+<div class="container-right cairo" style="display: none">
+
+<h1> قهر </h1>
+<h1> <i> qhr </i></h1>
+
+<br>
+
+<h1 style="color: green"> to oppress </h1>
+
+</div>
+
+
+</div>
+
+<!-- Panel 2 -->
+
+<div id="panel2" style="display: none">
+
+<div class="container-left">
+<h1>ف<span style="color: red">ا</span>عل </h1>
+<h1> <i>f<span style="color: red">a</span>a'l </i></h1>
+<br>
+<h1 style="color: green"> doer </h1>
+
+</div>
+
+
+<div class="container-right read">
+
+<h1> ك<span style="color: red">ا</span>تب </h1>
+<h1> <i> k<span style="color: red">a</span>tb </i></h1>
+
+<br>
+
+<h1 style="color: green"> writer </h1>
+</div>
+
+
+<div class="container-right cairo" style="display: none">
+
+<h1> ق<span style="color: red">ا</span>هر </h1>
+<h1> <i>q<span style="color: red">a</span>hr </i></h1>
+
+<br>
+
+<h1 style="color: green"> oppressor </h1>
+</div>
+
+
+
+</div>
+
+<!-- Panel 3 -->
+
+<div id="panel3" style="display: none">
+<div class="container-left">
+<h1><span style="color: red">م</span>فعل </h1>
+<h1>  <i><span style="color: red">m</span>fa'l </i></h1>
+<br>
+<h1 style="color: green"> being done </h1>
+
+</div>
+
+
+<div class="container-right read">
+
+<h1> <span style="color: red">م</span>كتب </h1>
+<h1> <i><span style="color: red">m</span>ktb </i></h1>
+
+<br>
+
+<h1 style="color: green"> desk </h1>
+
+</div>
+
+
+<div class="container-right cairo" style="display: none">
+
+<h1> <span style="color: red">م</span>ضهر </h1>
+<h1> <i><span style="color: red">m</span>qhr </i></h1>
+
+<br>
+
+<h1 style="color: green"> oppressive </h1>
+
+</div>
+
+</div>
+
+<!-- Panel 4 -->
+
+<div id="panel4" style="display: none">
+
+<div class="container-left read">
+<h1><span style="color: red">م</span>فعل<span style="color: red">ة</span></h1>
+<h1> <i><span style="color: red">m</span>fa'l<span style="color: red">a</span></i></h1>
+<br>
+<h1 style="color: green"> site of being done </h1>
+
+</div>
+
+
+<div class="container-left cairo" style="display: none">
+<h1>ف<span style="color: red">ا</span>عل<span style="color: red">ة</span></h1>
+<h1> <i>f<span style="color: red">a</span>a'l<span style="color: red">a</span></i></h1>
+<br>
+<h1 style="color: green"> the doer (feminine) </h1>
+
+</div>
+
+
+
+<div class="container-right read">
+
+<h1> <span style="color: red">م</span>كتب<span style="color: red">ة</span></h1>
+<h1> <i><span style="color: red">m</span>ktb<span style="color: red">a</span></i></h1>
+
+<br>
+
+<h1 style="color: green"> library </h1>
+
+</div>
+
+
+<div class="container-right cairo" style="display: none">
+
+<h1>ق<span style="color: red">ا</span>هر<span style="color: red">ة</span></h1>
+<h1> <i>q<span style="color: red">a</span>hr<span style="color: red">a</span></i></h1>
+<br>
+<h1 style="color: green"> oppressor / cairo</h1>
+
+</div>
+
+</div>
+
+<!-- Panel 5 -->
+
+<div id="panel5" style="display: none">
+
+<div class="container-left">
+<h1><span style="color: red">م</span>فع<span style="color: red">و</span>ل</h1>
+<h1> <i><span style="color: red">m</span>fa'<span style="color: red">u</span>l </i></h1>
+<br>
+<h1 style="color: green"> has been done</h1>
+
+</div>
+
+
+
+<div class="container-right read">
+
+<h1>كت<span style="color: red">ا</span>ب</h1>
+<h1> <i> kt<span style="color: red">a</span>b </i></h1>
+
+<br>
+
+<h1 style="color: green"> book </h1>
+
+</div>
+
+
+<div class="container-right cairo" style="display: none">
+
+<h1><span style="color: red">م</span>قه<span style="color: red">و</span>ر</h1>
+<h1> <i><span style="color: red">m</span>qh<span style="color: red">u</span>r </i></h1>
+
+<br>
+
+<h1 style="color: green"> oppressed/defeated </h1>
+
+</div>
+
+
+
+</div>
+
+<div id="slider">
+<button onClick=toggleDivs()>next word  </button>
+
+</div>
+
+</div>
+
+
+</body>
