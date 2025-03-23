@@ -34,7 +34,46 @@
 
 <body>
   
-<div id="containers">
+ <div id="intro-text"> 
+ 
+
+<div class="section" onclick="showNext(this)">
+        <h2>most Arabic words are derived from a <span style="color: green">3</span>, 4, or 5 letter <span style="color: green">root</span>, which typically comprise a <span style="color: green">past tense verb</span>.</h2>
+
+        <h3> رسم (drew), كتب (wrote), صنع (created) </h3>
+    </div>
+
+    <div class="section" onclick="showNext(this)">
+        <h2>words take similar '<span style="color:green">scales</span>', or templates, such as by having the same prefixes or letter inserts to give parallel meanings.</h2>
+        <h3> ر<span style="color:red">ا</span>سم (drawer), ك<span style="color:red">ا</span>تب (writer), ص<span style="color:red">ا</span>نع (creator) </h3>
+    </div>
+
+    <div class="section" onclick="showNext(this)">
+        <h2>the three-letter root <span style="color: green">ف-ع-ل</span> (f-a'-l), referring to 'doing', and all its variations, are often thought of as a blueprint, the baseline for thinking of scales.</h2>
+    </div>
+
+    <div class="section" onclick="showNext(this)">
+        <h2>on the left, you'll see the ف-ع-ل scale, and on the right the corresponding word for a different three-letter root.</h2>
+        <div id="slider" >
+        <button onClick=toggleStart()> next </button>
+
+    </div>
+</div>
+
+
+</div>
+
+    <script>
+        function showNext(element) {
+            element.style.display = "none";
+            var next = element.nextElementSibling;
+            if (next) {
+                next.style.display = "block";
+            }
+        }
+    </script>
+
+<div id="containers" style="display: none">
 
 <h1>root: <select id="wordList">
         <option value="read">ك-ت-ب</option>

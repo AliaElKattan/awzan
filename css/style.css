@@ -7,12 +7,25 @@
 }
   @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
 
+#intro-text {
+    margin-top: 20%;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+#intro-text h3 {
+    color: grey;
+    text-align: center;
+}
 #containers {
     margin-top: 12%;
     width: 80%;
     margin-left: 10%;
     overflow: hidden;
 }
+
 .container-left{
     width: 50%;
     float: left;
@@ -60,6 +73,14 @@ h1, h2{
 h2 {
 /*    font-family: Helvetica;*/
 }
+
+ .section {
+            cursor: pointer;
+            display: none;
+        }
+        .section:first-of-type {
+            display: block;
+        }
 
 #slider {
     margin-left: 40%;

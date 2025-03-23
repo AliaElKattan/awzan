@@ -28,6 +28,15 @@ function toggleDivs() {
 
     }
 
+function toggleStart() {
+            let startText = document.getElementById("intro-text");
+            let mainContainer = document.getElementById("containers");
+
+            startText.style.display = "none";
+            mainContainer.style.display = "block";
+
+    }
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
